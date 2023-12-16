@@ -1,0 +1,176 @@
+body {
+  background-color: bisque;
+  margin: 0px;
+  padding: 0;
+  padding-top: 170px;
+}
+
+.main__index {
+  display: flex;
+  justify-content: space-around;
+  .div__remera,
+  .div__buzo {
+    padding: 20px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 1s;
+    background-color: rgba(128, 128, 128, 0.493);
+    border-radius: 8px;
+    margin: 30px 0px;
+    .a__buzo,
+    .a__remera {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      font-family: var(--font__display_y_enlaces);
+      padding: 5px;
+    }
+    .img__buzo,
+    .img__remera {
+      max-width: 350px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+
+  .main__index {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .div__remera,
+  .div__buzo {
+    margin-bottom: 20px;
+  }
+
+  .img__remera,
+  .img__buzo {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+.main__crear_cuenta {
+  padding-left: 5px;
+  margin-bottom: 30px;
+  font-family: var(--font__body);
+
+  .form__crear_cuenta {
+    margin-bottom: 5px;
+
+    .div__datos_personales {
+      margin: 5px;
+      .ul__datos_personales {
+        padding-left: 0px;
+        list-style: none;
+      }
+      .input__datos_personales {
+        display: block;
+        margin: 5px 0px;
+        border-radius: 8px;
+      }
+    }
+    .div__consumidores {
+      margin: 5px;
+      .ul__consumidores {
+        list-style: none;
+        padding-left: 0px;
+        .p__consumidores {
+          padding: 5px;
+        }
+        .li__consumidores {
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+.div__remera {
+  animation: slideFromLeft 1s ease-out;
+}
+
+.div__buzo {
+  animation: slideFromRight 1s ease-out;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.contenedor-info-util {
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  font-style: italic;
+  font-size: small;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.articulo {
+  flex-wrap: wrap;
+}
+
+.pago-seguro,
+.medios-de-pago,
+.envios-a-todo-el-pais {
+  flex: 3;
+  margin: 10px;
+  padding: 0px;
+  justify-content: space-around;
+  opacity: 1;
+  transition: opacity 1s;
+  background-color: rgba(128, 128, 128, 0.493);
+  border-radius: 8px;
+}
+
+.articulo {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  margin: 10px;
+  text-align: center;
+  font-size: x-large;
+  font-style: italic;
+  justify-content: space-around;
+}
+
+img logo__nosotros {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  justify-content: space-around;
+}

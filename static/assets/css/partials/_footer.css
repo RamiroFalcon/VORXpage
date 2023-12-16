@@ -1,0 +1,39 @@
+footer{
+  background-color:aquamarine;
+  text-align: center; /* Centra horizontalmente */
+  font-family: var(--font__footer)
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around; 
+  align-items:center; 
+}
+
+.seccion ul{
+  text-align: justify;
+  list-style-type: none;
+  margin: 2px; /* Agrega margen entre las secciones si es necesario */
+}
+
+.copyright {
+  background-color: black;
+  text-align:center;
+  color: white;
+  padding: 10px 0; /* Espaciado en la parte superior e inferior del copyright */
+}
+
+/* Estilos para los íconos de redes sociales */
+.icono-ig img,
+.icono-fb img,
+.icono-tiktok img,
+.icono-wtspp img {
+  width: 40px;
+  height: 40px;  
+}
+
+@media (max-width: 768px) {
+  .footer-container {  
+    flex-direction:column-reverse;
+    padding: 10px;
+  }
+}
