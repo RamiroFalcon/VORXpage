@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, jsonify, request, url_for
 from os import path
 import pymysql
