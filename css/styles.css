@@ -1,5 +1,5 @@
-@import 'partials/_general.css';
-@import 'partials/_header.css';
-@import 'partials/_main.css';
-@import 'partials/_footer.css';
-@import 'partials/_variables.css';
+@import '_general.css';
+@import '_header.css';
+@import '_main.css';
+@import '_footer.css';
+@import '_variables.css';
